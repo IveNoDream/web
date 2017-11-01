@@ -42,7 +42,7 @@
 	</table>
 
 	<h2>03.细线表格案例</h2>
-	<table border="1" width="300" height="200" align="center" cellspacing="0" cellpadding="0">
+	<table border="1" width="200" height="100" align="center" cellspacing="0" cellpadding="0">
 		<caption>细线表格</caption>
 		<tr >
 			<td></td>
@@ -55,5 +55,144 @@
 			<td></td>
 		</tr>
 	</table>
+
+	<h2>04.细线课程表</h2>
+	<table align="center" width="700" height="400" cellspacing="1" bgcolor="green" border="1">
+		<caption>课程表</caption>
+		<tr bgcolor="white">
+			<td colspan="2"></td>
+			<th>星期1</th>
+			<th>星期2</th>
+			<th>星期3</th>
+			<th>星期4</th>
+			<th>星期5</th>
+			<th>星期6</th>
+		</tr>
+		<tr bgcolor="white">
+			<td rowspan="2">上午</td>
+			<td>1</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+		</tr>
+		<tr bgcolor="white">
+			<td>2</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+		</tr>
+		<tr bgcolor="white">
+			<td rowspan="2">下午</td>
+			<td>3</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+		</tr>
+		<tr bgcolor="white">
+			<td>4</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+			<td>语文</td>
+		</tr>
+	</table>
+
+
+	<h2>05.表单</h2>
+	<form action="1.php" method="post">
+		<fieldset>
+			<legend>分组信息</legend>
+			用户名:<input type="text" maxlength="6"  name="username" value="大前端"><br>
+			<br>
+	   		<!-- 密码输入框 -->
+	   		密码:<input type="password" name="pwd">
+			<br>
+			<br>
+			<!-- 单选框 -->
+	   		<input type="radio" name="gender" checked="checked">男
+	   		<input type="radio" name="gender">女
+			<br>
+			<!-- 下拉列表 -->
+	   		省(市)： <select>
+					<option>河北</option>
+					<option>山西</option>
+					<option>山东</option>
+					<option selected="selected">北京</option>
+	   			</select>
+			<!-- 下拉列表多选 -->
+	   			<select multiple="multiple">
+					<option>河北</option>
+					<option>山西</option>
+					<option>山东</option>
+					<option selected="selected">北京</option>
+	   			</select>
+	   	    <!-- 下拉列表信息分组 -->
+	   			市(区):<select>
+	   			<optgroup label="北京市">
+	   			<option>昌平区</option>
+	   			<option>海淀区</option>
+	   			<option>朝阳区</option>
+	   			<option>大兴区</option>
+	   			</optgroup>
+	   			<optgroup label="广州市">
+	   			<option>昌平区</option>
+	   			<option>海淀区</option>
+	   			<option>朝阳区</option>
+	   			<option>大兴区</option>
+	   			</optgroup>
+	   	       	</select>
+	   	       	<br><br>
+
+	   	       	<!-- 多选框 -->
+	   	       	<input type="checkbox" checked="checked">喝酒
+	   	       	<input type="checkbox" checked="checked">抽烟
+	   	       	<input type="checkbox" checked="checked">烫头
+
+	   	       	<!-- 多行文本框 -->
+	   	       	<textarea cols="130" rows="10"></textarea>
+	   	       	<br><br>
+
+	   	       	<!-- 文件上传控件 -->
+	   	       	<input type="file">
+				<br><br>
+				<!-- 文件提交按钮 -->
+	   	       	<!-- <input type="submit"> -->
+
+				<!-- 普通按钮 -->
+	   	       	<!-- <input type="button" value="普通按钮"> -->
+
+	   	       	<!-- 网址控件 -->
+				<!-- <input type="url"> -->
+				<!-- 日期控件 -->
+				<!-- <input type="date"> -->
+				<!-- 时间控件 -->
+				<!-- <input type="time"> -->
+				<!-- 邮件控件 -->
+				<!-- <input type="email"> -->
+				<!-- 数字控件 -->
+				<!-- <input type="number" step="5"> -->
+				<!-- 滑块控件 -->
+  				<!-- <input type="range"> -->
+
+	   	       	<!-- 图片按钮 -->
+	   	       	<input type="image" src="按钮.jpg">
+
+	   	       	<!-- 重置按钮 -->
+	   	       	<input type="reset">
+
+		</fieldset>
+	</form>
+
 </body>
 </html>
